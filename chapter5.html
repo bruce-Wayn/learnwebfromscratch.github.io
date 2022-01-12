@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+
+    <style>
+        :root{background-color: rgb(32, 32, 32); color: blueviolet;}
+
+        .drop {position: relative; display: inline-block;}
+
+        .open {position: absolute; display: none; padding: 10px 16px; background-color: aquamarine; z-index: 1; min-width: 160px;}
+
+        .drop:hover .open {display: block;}
+        
+        a {display: block; text-decoration: none; color: rgb(191, 53, 255);}
+
+        #baar {background-color: red; border-radius: 3px; height: 160px; width: 160px; padding: 16px; margin-top: 50px; display: none;}
+
+        .buton {width: 50px;}
+        .buton:hover ~ #baar {animation-name: colore; animation-duration: 3s; animation-fill-mode: forwards; animation-direction: alternate-reverse; animation-timing-function: ease-in-out;  animation-iteration-count: infinite; display: block; transition: 500ms; animation-fill-mode: forwards;}
+
+        @keyframes colore { 0% {background-color: red; width: 0px; height: 0px;} 33%{background-color: red; height: 100px; width: 180px; border-radius: 30%; } 66%{background-color: blue; height: 160px; width: 160px; border-radius: 40%; } 
+        100% {background-color: green; width: 80px; height: 80px; border-radius: 50%;}}
+
+        
+    </style>
+
+<body>
+
+    <a href="index.htm">back to home</a>
+    <br>
+    
+    
+    
+    <div class="drop">
+        <p>blow me</p>
+        <div class="open">
+        <a href="#">alpha</a>
+        <a href="#">beta</a>
+        <a href="#">caamaa</a>
+        </div>
+    
+    </div>
+
+    <br>
+    <br>
+    <br>
+    
+    <div class="buton">button</div>
+    <div id="baar"></div>
+</body>
+
+</html>

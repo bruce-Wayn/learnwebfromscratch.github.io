@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    
+    <!-- here is the css-->
+    <style>
+        body {margin: 20px;}
+
+        #one {background-color: rgb(79, 209, 140);
+            padding: 15px 0px;
+            text-align: center;
+            opacity: 0.6;
+            transition: 0.3s;
+            height: 70px; width: 140px; align-self: center; margin: 20px 40px 20px 0px;}
+
+        #one:hover {opacity: 1; height: 90px; width: 180px;}
+
+        #two {background-color: rgba(49, 159, 187, 0.6);
+        border-radius: 23px; border-style: hidden;}
+        
+        .colore:hover {opacity: 1; height: 50px; width: 180px;}
+
+        /* display none removes the block without taking any space, visibility hidden just hides the element but the element is still there*/
+        .colore {padding: 5px 1px; text-align: center; background-color: red; display: none; visibility: hidden;}
+        
+        .block {padding: 25px 25px 25px 25px; background-color: red; height: 30px; width: 110px; font-size: 18px; }
+        
+        a {background-color: royalblue; color: seashell; text-decoration: none; padding: 10px; border-radius: 35px; transition: 100ms; margin: 100px 40px 10px 0px;}
+        a:hover {background-color: rgb(65, 255, 97); color: seashell; text-decoration: none; padding: 10px; 
+            border-radius: 5px; transition: 100ms; margin: 20px 40px 100px 0px;}
+        
+        a:hover:active {background-color: rgb(5, 0, 0); color: seashell; text-decoration: none; padding: 10px; 
+            border-radius: 5px; transition: 100ms; margin: 20px 40px 100px 0px;}
+    </style>
+
+</head>
+<body>
+    <a href="index.htm">back to home</a>
+
+    <div>
+        <div id="one">
+            <p title="hover element" class="colore" id="oneone">part one of the code</p>
+        </div>
+
+        <div id="two">
+            <p title="hover element 2" class="colore">part two of the code</p>
+        </div>
+    </div>
+
+    <p class="block">here is a block</p>
+    end of html basics now to chapter 4 for styling/css
+
+    <a href="https://www.google.com/" target="_blank" >GOOGLE</a>
+
+</body>
+</html>

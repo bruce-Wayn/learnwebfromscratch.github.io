@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <script src="script.js"></script>
+
+
+    <style>
+        body {background-color: blanchedalmond;}
+
+        .box{height: 200px;
+            width: 200px;
+            border: 5px solid red;
+            background-color: salmon;
+            opacity: 0.4;
+            display: flex;
+            align-items: center;}
+        
+        .within{height: 40px; width: 40px;background-color: seagreen;}
+        
+        .box2{height: 40px; width: 40px; background-color: seagreen ; align-self: flex-start;}
+        .box2:hover {align-self: flex-end;}
+
+        .container {display: inline-grid;
+                    grid-template-columns: auto auto auto;
+                    background-color: #2196F3;
+                    padding: 10px;
+                    grid-gap: 5px 6px; border-radius: 24px; user-select: none;}
+        
+        .grid-item {background-color: aqua;
+                    border: 3px inset rgba(160, 255, 231, 0.8);
+                    padding: 20px;
+                    font-size: 30px;
+                    text-align: center;
+                    box-shadow: 2px 1px 7px rgb(135, 250, 225) ; border-radius: 17px; user-select: none;}
+        
+        .grid-item:hover {padding: 24px; transition: 100ms; background-color: rgb(255, 255, 255); border: 3px outset rgb(255, 182, 182); user-select: none;}
+        .grid-item:active {background-color: rgba(255, 221, 221, 0.575); user-select: none; border: 3px inset rgb(255, 136, 136); box-shadow: 2px 2px 14px rgb(255, 0, 0) ;}
+
+
+        /*yes grid column can be assigned*/
+        .grid-item0 {grid-column-start: 1; grid-column-end: 4;}
+        .grid-item1 {grid-column-start: 1; grid-column-end: 4;}
+        .grid-item2 {grid-column-start: 1; grid-column-end: 5;}
+        .grid-item6 {grid-row-start: 3; grid-row-end: 6; grid-column-start: 4; grid-column-end: 5;}
+
+</style>
+<body>
+    <a href="index.htm">back to home</a>
+    <br>
+    
+    <div class="box">
+        <div class="within"></div>
+
+        <div class="box2"> <a href="#">hi</a></div>
+    </div>
+
+    <div class="container">
+        <div class="grid-item grid-item1">1</div>
+        <div class="grid-item grid-item2">2</div>
+        <div class="grid-item grid-item3">3</div>
+        <div class="grid-item grid-item4">4</div>
+        <div class="grid-item grid-item5">5</div>
+        <div class="grid-item grid-item6">6</div>
+        <div class="grid-item grid-item7">7</div>
+        <div class="grid-item grid-item8">8</div>
+        <div class="grid-item grid-item9">9</div>
+        <div class="grid-item grid-item0">0</div>
+    </div>
+
+    <!--
+    <script type="text/javascript">
+        //here is a js comment
+        var ourname;
+        ourname = 5;
+
+        var a =5;
+        var b;
+        b = ourname;
+
+        var c = "name";
+        d = a + b + c;
+        e = a+b;
+        document.write("hello");
+
+    </script>
+    -->
+
+
+</body>
+
+</html>
